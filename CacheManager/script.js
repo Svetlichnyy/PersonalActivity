@@ -1,4 +1,4 @@
-export class LruCacheManager {
+export default class LruCacheManager {
     constructor(capacity) {
         this.maxCapacity = capacity;
         this.cache = [];

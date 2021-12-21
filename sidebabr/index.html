@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <img src="images/logo.svg" alt="" class="sidebar-logo">
+        <p class="sidebar-name"> System <span class="sidebar-name__light"> Workspace </span></p>
+    </div>
+    <div class="sidebar-menu">
+        <div class="sidebar-menu__item item-1" >
+            <img src="images/home.svg" alt="" class="item-icon">
+            <p class="item-text"> Home </p>
+        </div>
+        <div class="sidebar-menu__item item-2">
+            <img src="images/Categories.svg" alt="" class="item-icon">
+            <p class="item-text"> Categories </p>
+        </div>
+        <div class="sidebar-menu__item item-3">
+            <img src="images/Orders.svg" alt="" class="item-icon">
+            <p class="item-text"> Orders </p>
+        </div>
+        <div class="sidebar-menu__item item-4">
+            <img src="images/Team.svg" alt="" class="item-icon">
+            <p class="item-text"> My Team </p>
+        </div>
+        <div class="sidebar-menu__item item-5">
+            <img src="images/Downloads.svg" alt="" class="item-icon">
+            <p class="item-text"> My Downloads </p>
+        </div>
+
+        <div class="sidebar-button" id="sidebar-button">
+
+        </div>
+        <span class="sidebar-line" id="line"> </span>
+
+        <div class="sidebar-menu__item item-6">
+            <img src="images/Company%20Functions.svg" alt="" class="item-icon">
+            <p class="item-text"> Functions </p>
+        </div>
+        <div class="sidebar-menu__item item-7">
+            <img src="images/Management.svg" alt="" class="item-icon">
+            <p class="item-text"> Management </p>
+        </div>
+        <div class="sidebar-menu__item item-8">
+            <img src="images/Catalogue%20Settings.svg" alt="" class="item-icon">
+            <p class="item-text"> Settings </p>
+        </div>
+        <div class="sidebar-menu__item item-9">
+            <img src="images/Reporting.svg" alt="" class="item-icon">
+            <p class="item-text"> Reporting </p>
+        </div>
+    </div>
+    <div class="sidebar-grow">
+
+    </div>
+    <div class="sidebar-footer">
+        <img class="avatar" src="images/avatar.png" alt="">
+        <p class="footer-text"> Felipe Monroy <span class="footer-text__light"> Office Manager </span> </p>
+    </div>
+</div>
+<script>
+    document.getElementById("sidebar-button").onclick = function() {
+        open()
+    };
+
+    function open() {
+        document.getElementById("sidebar").classList.toggle("sidebar-closed");
+    }
+</script>
+</body>
+</html>

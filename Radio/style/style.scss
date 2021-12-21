@@ -51,6 +51,7 @@ h2{
   text-transform: uppercase;
   color: #C1C8D7;
   flex-grow: 1;
+  padding-top: 5px;
 }
 .buttons-list{
   display: flex;
@@ -65,28 +66,28 @@ h2{
   color: #000000;
 }
 .radio.skin{
-  background: url("/images/dot.svg") center no-repeat;
+  background: url("../images/dot.svg") center no-repeat;
 }
 .radio:checked{
-  background:url("/images/dot-checked.svg") center no-repeat;
+  background:url("../images/dot-checked.svg") center no-repeat;
 }
 .radio.skin:hover{
-  background: url("/images/dot-hover.svg") center no-repeat;
+  background: url("../images/dot-hover.svg") center no-repeat;
 }
 .radio.skin:hover:checked{
-  background: url("/images/dot-hover-checked.svg") center no-repeat;
+  background: url("../images/dot-hover-checked.svg") center no-repeat;
 }
 .radio.skin:active:checked{
-  background: url("/images/dot-pressed-checked.svg") center no-repeat;
+  background: url("../images/dot-pressed-checked.svg") center no-repeat;
 }
 .radio.skin:active{
- background: url("/images/dot-pressed-unchecked.svg") center no-repeat;
+ background: url("../images/dot-pressed-unchecked.svg") center no-repeat;
 }
 .radio.skin:disabled{
-  background: url("/images/dot-disabled-unchecked.svg") center no-repeat;
+  background: url("../images/dot-disabled-unchecked.svg") center no-repeat;
 }
 .radio.skin:disabled:checked{
-  background: url("/images/dot-disabled-checked.svg") center no-repeat;
+  background: url("../images/dot-disabled-checked.svg") center no-repeat;
 }
 .radio:hover{
   cursor: pointer;

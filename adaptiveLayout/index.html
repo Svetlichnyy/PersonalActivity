@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdaptiveLayout</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="body-wrapper">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="logo-img" src="images/logo.svg" alt="">
+            </div>
+            <div class="header-wrap">
+            </div>
+            <div class="burger-menu" id="burger">
+                <span class="burger-line burger-line-first"></span>
+                <span class="burger-line burger-line-second"></span>
+                <span class="burger-line burger-line-third"></span>
+                <span class="burger-line burger-line-fourth"></span>
+            </div>
+            <div class="header-menu">
+                <div class="menu-cell">How to Start</div>
+                <div class="menu-cell">Solutions</div>
+                <div class="menu-cell">Pricing</div>
+                <div class="menu-cell">Company</div>
+                <div class="menu-cell">Support</div>
+            </div>
+        </div>
+    </header>
+    <main>
+<div class="main-tagline">
+    <h1 class="tagline"> Lorem ipsum dolor sit amet,
+       <span class="colored">consectetur adipiscing elit  </span> </h1>
+</div>
+        <div class="pictures-gallery">
+            <div class="top-gallery">
+                <div class="img-cell">
+                    <img src="images/image1.png" alt="" class="image">
+                    <h2 class="img-title">Lorem ipsum</h2>
+                    <p class="img-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="img-cell">
+                    <img src="images/image1.png" alt="" class="image">
+                    <h2 class="img-title">Lorem ipsum</h2>
+                    <p class="img-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="img-cell">
+                    <img src="images/image1.png" alt="" class="image">
+                    <h2 class="img-title">Lorem ipsum</h2>
+                    <p class="img-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="bot-gallery">
+                <div class="img-cell">
+                    <img src="images/image1.png" alt="" class="image">
+                    <h2 class="img-title">Lorem ipsum</h2>
+                    <p class="img-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="img-cell">
+                    <img src="images/image1.png" alt="" class="image">
+                    <h2 class="img-title">Lorem ipsum</h2>
+                    <p class="img-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="body-grow">
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <img src="images/Vector(5).svg" alt="" class="social first-social">
+                <img src="images/Vector.svg" alt="" class="social">
+                <img src="images/Vector(1).svg" alt="" class="social">
+                <img src="images/Vector(2).svg" alt="" class="social">
+                <img src="images/Vector(3).svg" alt="" class="social">
+                <img src="images/Vector(4).svg" alt="" class="social last-social">
+            </div>
+            <div class="footer-wrap">
+
+            </div>
+            <div class="footer-rights">
+                © 2021 Lorem ipsum, LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    document.getElementById("burger").onclick = function() {
+        open()
+    };
+
+    function open() {
+        document.getElementById("burger").classList.toggle("burger-active");
+    }
+</script>
+</body>
+</html>

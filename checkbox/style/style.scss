@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    background-color: #fff;
+    width: 622px;
+    height: 445px;
+    border-radius: 40px;
+    justify-content: space-around;
+  }
+  h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #596172;
+    padding: 42px 0 100px 0;
+  }
+  .button-container{
+    display: flex;
+    width: 214px;
+  }
+  .condition{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #C1C8D7;
+    flex-grow: 1;
+    padding-top: 5px;
+  }
+  .buttons-list{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox{
+    appearance: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+  }
+  .skin{
+    position: relative;
+    left: -13px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4690FF;
+    border-radius: 3px;
+    margin: 0;
+  }
+  .checkbox:checked{
+    background-image: url(../images/check.svg);
+  }
+  .checkbox.skin:hover{
+    background-color: #ECF4FF;
+  }
+  .checkbox.skin:active{
+   background-color: #C3DBFF;
+  }
+  .checkbox.skin:disabled{
+    border: 2px solid #DDDDDD;
+    background-color: #fff;
+  }
+  .checkbox:checked:disabled{
+    background-image: url(../images/check-dis.svg);
+  }
+  .checkbox:hover{
+    cursor: pointer;
+  }
+  input:disabled+label{
+    color: #DDD;
+  }
+  .checkbox:hover:disabled{
+    cursor: default;
+
+  }
+  .checkbox:hover:disabled+label{
+    cursor: default;
+  }

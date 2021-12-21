@@ -1,0 +1,270 @@
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+}
+
+body {
+  height: 100vh;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  width: 1850px;
+  height: 650px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+  padding: 0 0 65px 0;
+  margin: 0;
+}
+
+/*HEADER*/
+.header-span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #949FB7;
+}
+
+/*SELECT-BUTTON*/
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.custom-select {
+  position: relative;
+  width: 251px;
+}
+
+.custom-select[open] {
+  z-index: 1;
+}
+.custom-select[open] .input-skin {
+  background-color: #F7F8FA;
+  border-color: #abb4cb;
+}
+
+.input-skin {
+  width: 250px;
+  padding: 10px 10px 10px 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 1px solid #d7dff2;
+  list-style: none;
+  z-index: 10;
+}
+
+.custom-select[open] + .input-skin:hover {
+  cursor: pointer;
+}
+
+.custom-select[open] summary:before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
+  z-index: -1;
+}
+
+/*SELECT ARROW*/
+.arrow {
+  opacity: 0.6;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 17px;
+  bottom: 16px;
+}
+
+.input-skin:hover {
+  border-color: #abb4cb;
+}
+.input-skin:hover .arrow {
+  opacity: 1;
+}
+
+.custom-select[open] .arrow {
+  transform: scale(1, -1);
+}
+
+input[type=radio] {
+  appearance: none;
+  display: none;
+  pointer-events: none;
+}
+
+input[type=radio]:checked {
+  display: inline;
+}
+
+/*DROPDOWN-LIST*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #abb4cb;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  margin: 0;
+  border-radius: 7px;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #939AAB;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.list-cell:hover {
+  color: #0F1B33;
+  background-color: #F7F8FA;
+}
+
+input[name=item]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+  color: #0F1B33;
+}
+
+input[name=itemitem]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+  color: #0F1B33;
+}
+
+input[title=Default]:after {
+  opacity: 0.5;
+}
+
+.list-cell label {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  padding: 10px 10px 10px 15px;
+}
+
+.input-skin.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/*INPUT NORMAL*/
+.input-box {
+  position: relative;
+}
+
+.text-form {
+  cursor: auto;
+}
+
+.text-form:focus-visible {
+  outline-color: #abb4cb;
+  background-color: #F7F8FA;
+}
+
+.errormsg {
+  display: none;
+}
+
+.text-form:focus-visible:invalid {
+  outline-color: #ED6262;
+}
+
+.text-form:not(:placeholder-shown) {
+  border-color: #abb4cb;
+}
+
+.text-form:invalid {
+  border-color: #ED6262;
+}
+
+.text-form:not(:focus):invalid ~ .errormsg {
+  display: block;
+  position: absolute;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ED6262;
+}
+
+.typeof {
+  position: absolute;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #C1C8D7;
+  left: -150px;
+  top: 14px;
+}
+
+.input-skin[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* INPUT PASSWORD */
+input[name=Password] {
+  padding-right: 30px;
+}
+
+.text-form::placeholder {
+  opacity: 0.65;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.eye-check {
+  opacity: 0.6;
+  position: absolute;
+  top: 9px;
+  left: 220px;
+  width: 22px;
+  height: 22px;
+}
+
+.eye-check:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.eye-check:hover ~ .input-skin {
+  border: 1px solid #abb4cb;
+}
+
+input[type=password]:disabled ~ img {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */

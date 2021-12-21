@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+</head>
+<body>
+    <div class="window">
+        <div class="container">
+
+            <!--INPUT SELECT-->
+
+            <div class="input-wrapper">
+                <h2 class="input-header">
+                    Input <span class="header-span"> Selector</span>
+                </h2>
+
+                    <details class="custom-select">
+                        <summary class="input-skin">
+                            <img class="arrow" src="images/hoverArrow.svg" alt="">
+                            <input class="radio-first" type="radio" name="item" id="default" title="Default" checked>
+                            <input class="radio-first" type="radio" name="item" id="item1" title="Placeholder 1">
+                            <input class="radio-first" type="radio" name="item" id="item2" title="Placeholder 2">
+                            <input class="radio-first" type="radio" name="item" id="item3" title="Placeholder 3">
+                            <input class="radio-first" type="radio" name="item" id="item4" title="Placeholder 4">
+                            <input class="radio-first" type="radio" name="item" id="item5" title="Placeholder 5">
+                        </summary>
+                        <ul class="list">
+                            <li class="list-cell">
+                                <label for="item1">Placeholder 1</label>
+                            </li>
+                            <li class="list-cell">
+                                <label for="item2">Placeholder 2</label>
+                            </li>
+                            <li class="list-cell">
+                                <label for="item3">Placeholder 3</label>
+                            </li>
+                            <li class="list-cell">
+                                <label for="item4">Placeholder 4</label>
+                            </li>
+                            <li class="list-cell">
+                                <label for="item5">Placeholder 5</label>
+                            </li>
+                        </ul>
+                    </details>
+
+                <details class="custom-select">
+                    <summary class="input-skin disabled">
+                        <img class="arrow" src="images/hoverArrow.svg" alt="">
+                        <input class="radio-second" type="radio" name="itemitem" id="def" title="Default" checked>
+                        <input class="radio-second" type="radio" name="itemitem" id="1" title="Placeholder 1">
+                        <input class="radio-second" type="radio" name="itemitem" id="2" title="Placeholder 2">
+                        <input class="radio-second" type="radio" name="itemitem" id="3" title="Placeholder 3">
+                        <input class="radio-second" type="radio" name="itemitem" id="4" title="Placeholder 4">
+                        <input class="radio-second" type="radio" name="itemitem" id="5" title="Placeholder 5">
+                    </summary>
+                    <ul class="list">
+                        <li class="list-cell">
+                            <label for="1">Placeholder 1</label>
+                        </li>
+                        <li class="list-cell">
+                            <label for="2">Placeholder 2</label>
+                        </li>
+                        <li class="list-cell">
+                            <label for="3">Placeholder 3</label>
+                        </li>
+                        <li class="list-cell">
+                            <label for="4">Placeholder 4</label>
+                        </li>
+                        <li class="list-cell">
+                            <label for="5">Placeholder 5</label>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+
+        <!-- INPUT NORMAL-->
+
+            <div class="input-wrapper">
+                <h2 class="input-header">
+                    Input <span class="header-span"> Normal</span>
+                </h2>
+                <div class="input-box">
+                    <input type="text" name="" id="text1" class="text-form input-skin" placeholder="Text">
+                    <label for="text1"></label>
+                    <div class="errormsg">Error text</div>
+                </div>
+                <div class="input-box">
+                    <span class="typeof">No @ = ERROR</span>
+                    <input type="email" name="" id="Email" class="text-form input-skin" placeholder="Email">
+                    <label for="Email"></label>
+                    <div class="errormsg">Error text</div>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" id="text2" class="text-form input-skin" placeholder="Text" disabled>
+                    <label for="text2"></label>
+                    <div class="errormsg">Error text</div>
+                </div>
+            </div>
+
+            <!--INPUT PASSWORD-->
+
+            <div class="input-wrapper">
+                <h2 class="input-header">
+                    Input <span class="header-span"> Password</span>
+                </h2>
+                <div class="input-box">
+                    <img class="eye-check" src="images/eye-slashed.svg" alt="" onclick="showPassword('Password1',this)">
+                    <input type="password" name="Password" id="Password1" class="text-form input-skin" placeholder="Password">
+                    <label for="Password1"></label>
+                    <div class="errormsg">Error text</div>
+                </div>
+                <div class="input-box">
+                    <span class="typeof">Length < 4 = ERROR</span>
+                    <input type="password" name="Password" id="Password2" class="text-form input-skin" placeholder="Password" minlength="4">
+                    <label for="Password2"></label>
+                    <img class="eye-check" src="images/eye-slashed.svg" alt="" onclick="showPassword('Password2',this)">
+                    <div class="errormsg">Error text</div>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="Password" id="Password3" class="text-form input-skin" placeholder="Password" disabled>
+                    <label for="Password3"></label>
+                    <img class="eye-check" src="images/eye-slashed.svg" alt="" onclick="showPassword('Password3',this)">
+                    <div class="errormsg">Error text</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+function showPassword(id,el) {
+    let x = document.getElementById(id);
+    console.log(x);
+    if (x.type === "password") {
+        x.type = "text";
+        el.src = 'images/eye.svg';
+    } else {
+        x.type = "password";
+        el.src = 'images/eye-slashed.svg';
+    }
+}
+    </script>
+</body>
+</html>
