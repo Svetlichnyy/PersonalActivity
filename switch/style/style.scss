@@ -1,0 +1,114 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 622px;
+    height: 445px;
+    border-radius: 40px;
+}
+.switch{
+    padding-top: 42px;
+}
+.switch__title{
+    font-weight: 300;
+    font-size: 24px;
+    color: #949FB7;
+    padding-bottom: 100px;
+}
+.switch__title span{
+    font-weight: 500;
+    font-size: 24px;
+    color: #596172;
+    padding-right: 10px;
+}
+.skin{
+    height: 12px;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-right: 102px;
+    color: #C1C8D7;
+}
+.switch-wrap{
+    display: flex;
+    align-items: center;
+}
+.switch-box{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.switch-box input{
+    appearance: none;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: .4s;
+    background-color: #BCBCC4;
+}
+.slider::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transition: .4s;
+    background-color: #fff;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.slider.input{
+    border-radius: 15px;
+}
+.slider.input::before{
+    border-radius: 15px;
+}
+input:checked + .slider{
+    background-color: #34C759;
+    transition-delay: .2s;
+}
+input:checked + .slider::before{
+    background-color: #fff;
+    transform: translateX(20px);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.06);
+}
+input:hover + .slider{
+    background-color: #BCBCC3;
+}
+input:checked:hover + .slider{
+    background-color: #34C759;
+}
+input:disabled + .slider{
+    background-color: #EBEBED;
+    cursor: default;
+}
+input:disabled + .slider::before{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.02);
+    cursor: default;
+}
+input:checked:disabled + .slider{
+    background-color: #C2EECD;
+    cursor: default;
+}
+input:checked:disabled + .slider::before{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.02);
+    cursor: default;
+}
