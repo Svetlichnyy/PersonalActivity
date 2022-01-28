@@ -1,0 +1,83 @@
+.header-main {
+  width: 100vW;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-main * {
+  font-family: "Circe", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header-main .header-container {
+  display: flex;
+  align-items: center;
+  width: 1070px;
+  height: 45px;
+}
+.header-main .button-container {
+  width: 506px;
+  margin-right: 0;
+  display: flex;
+}
+.header-main .button-container button {
+  white-space: nowrap;
+  margin-right: 54px;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000850;
+  opacity: 0.7;
+}
+.header-main .button-container button:last-child {
+  margin-right: 0;
+}
+.header-main .header-grow {
+  width: 10vw;
+}
+.header-main .outlined-button {
+  background: none;
+  width: 139px;
+  height: 34px;
+  border: 1px solid #03A0E8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #03A0E8;
+  margin: 0 11px;
+}
+.header-main .outlined-button:hover {
+  background: #0098DE;
+  color: white;
+  transition: 0.5s ease;
+}
+.header-main .main-button {
+  width: 92px;
+  height: 34px;
+  background: #03A0E8;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin: 0 11px;
+  border: none;
+}
+.header-main .main-button:hover {
+  background: #0098DE;
+  transition: 0.5s ease;
+}
+.header-main .header-auth-buttons {
+  display: flex;
+}
+.header-main button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Header.css.map */

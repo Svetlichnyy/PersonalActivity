@@ -1,0 +1,8 @@
+
+*{
+    font-family: Circe, sans-serif;
+}
+.taskList{
+    display: flex;
+    justify-content: center;
+}
